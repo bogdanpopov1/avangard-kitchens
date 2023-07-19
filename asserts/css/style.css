@@ -326,7 +326,10 @@ a {
     color: #878B90;
 }
 
-.card_1, .card_2, .card_3, .card_4 {
+.card_1,
+.card_2,
+.card_3,
+.card_4 {
     background-color: white;
     position: relative;
 }
@@ -340,7 +343,8 @@ a {
     margin-top: 4vw;
 }
 
-.catalog .stroke_1, .stroke_2 {
+.catalog .stroke_1,
+.stroke_2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -587,7 +591,11 @@ a {
     margin-bottom: 6vw;
 }
 
-.footer .style, .front, .form, .color, .size {
+.footer .style,
+.front,
+.form,
+.color,
+.size {
     display: flex;
     flex-direction: column;
     gap: 1vw;
@@ -1374,7 +1382,8 @@ a {
     margin-bottom: 0.5vw;
 }
 
-.product_appeal .product_appeal_subscribe .sub_input .form-group input, .form-group textarea {
+.product_appeal .product_appeal_subscribe .sub_input .form-group input,
+.form-group textarea {
     margin-bottom: 1%;
     width: 21vw;
     box-sizing: border-box;
@@ -1467,14 +1476,13 @@ a {
 .product_appeal .product_appeal_networks .pr_telegram {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    justify-items: center;
+    align-items: center;
     gap: 2vw;
 
     width: 44vw;
     height: 11vw;
     background-color: #F4F3F1;
-    padding: 3vw 1.3vw 0 2.7vw;
+    padding-left: 2.7vw;
 
     border-radius: 0.5vw;
 }
@@ -1487,12 +1495,13 @@ a {
 .product_appeal .product_appeal_networks .pr_youtube {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 2vw;
 
     width: 44vw;
     height: 11vw;
     background-color: #F4F3F1;
-    padding: 4vw 1.3vw 0 2.7vw;
+    padding-left: 2.7vw;
 
     border-radius: 0.5vw;
 }
@@ -1519,11 +1528,18 @@ a {
 
 
 
-/* 375px */
+/* 425px */
 
 @media (max-width: 425px) {
     .container {
         max-width: 425px;
+    }
+
+    .header {
+        padding: 2.7vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2.7vw;
     }
 
     .header .logo img {
@@ -1544,7 +1560,7 @@ a {
     }
 
     .header .info {
-        margin-left: 15vw;
+        margin-left: 18vw;
     }
 
     .header .info .address {
@@ -1571,7 +1587,7 @@ a {
     .header .info .fa-bars {
         display: block;
         font-size: 6.4vw;
-        margin-left: 6.4vw;
+        margin-left: 3.4vw;
     }
 
     .header .nav {
@@ -1623,10 +1639,11 @@ a {
         padding-left: 5.5vw;
         display: flex;
         flex-direction: row;
+        gap: 7vw;
     }
 
     .banner .banner_text h3 {
-        margin-top: 2vw;
+        margin-top: 3vw;
         font-size: 3.8vw;
     }
 
@@ -1638,11 +1655,10 @@ a {
     .banner .banner_text h4 {
         margin-top: 0;
         font-size: 2.5vw;
+        padding-bottom: 1vw;
     }
 
     .banner .banner_text button {
-
-
         padding: 3vw 5.6vw;
         gap: 1vw;
 
@@ -1664,10 +1680,14 @@ a {
         padding: 0 5.5vw;
     }
 
+    .catalog {
+        padding-bottom: 16vw;
+    }
+
     .catalog h2 {
         margin-top: 0;
         margin-bottom: 11vw;
-        padding-top: 16vw;
+        padding-top: 7vw;
         font-size: 6.5vw;
     }
 
@@ -1689,7 +1709,8 @@ a {
         margin-top: 4vw;
     }
 
-    .catalog .stroke_1, .stroke_2 {
+    .catalog .stroke_1,
+    .stroke_2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1705,19 +1726,26 @@ a {
     .catalog .arrow_1 {
         width: 12vw;
         height: 12vw;
-        font-size: 9vw;
+        font-size: 7vw;
         border-radius: 0 2vw 2vw 0;
         padding: 0.5vw;
         top: 21vw;
+        text-align: center;
+        align-items: center;
+        display: flex;
     }
 
     .catalog .arrow_2 {
         width: 12vw;
         height: 12vw;
-        font-size: 9vw;
+        font-size: 7vw;
         border-radius: 0 2vw 2vw 0;
         padding: 0.5vw;
+        padding-bottom: 0.1vw;
         top: 21vw;
+        text-align: center;
+        align-items: center;
+        display: flex;
     }
 
     .catalog .arrow_2:hover {
@@ -1758,7 +1786,7 @@ a {
         display: flex;
         flex-direction: column;
         gap: 4.4vw;
-        padding: 6vw;
+        padding: 4vw;
     }
 
     .catalog .discription {
@@ -1771,8 +1799,8 @@ a {
     }
 
     .catalog .discription img {
-        width: 2vw;
-        height: 2vw;
+        width: 3vw;
+        height: 3vw;
         margin-left: -1vw;
         cursor: pointer;
     }
@@ -1819,13 +1847,13 @@ a {
     /* footer */
 
     .footer {
-        padding: 15vw 5.5vw 12vw;
+        padding: 15vw 5.5vw 1vw;
     }
 
     .footer .f_nav {
         display: flex;
         flex-direction: column;
-        gap: 5vw;
+        gap: 4vw;
 
         margin-bottom: 6vw;
     }
@@ -1834,7 +1862,11 @@ a {
         display: none;
     }
 
-    .footer .style, .front, .form, .color, .size {
+    .footer .style,
+    .front,
+    .form,
+    .color,
+    .size {
         display: flex;
         flex-direction: column;
         gap: 1vw;
@@ -1926,8 +1958,8 @@ a {
     }
 
 
-    .footer .f_oter_info { 
-        margin: 0; 
+    .footer .f_oter_info {
+        margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1935,59 +1967,59 @@ a {
         justify-items: center;
         gap: 2vw;
     }
-    
+
     .footer .text {
         display: flex;
         flex-direction: column;
         gap: 3.5vw;
     }
-    
+
     .footer .address {
         text-align: center;
         font-size: 3.8vw;
         font-weight: 400;
         margin-bottom: 5vw;
     }
-    
+
     .footer .address_1 {
         margin-bottom: 1vw;
     }
-    
+
     .footer .phone {
         text-align: right;
     }
-    
+
     .footer .phone h4 {
         font-size: 4.4vw;
     }
-    
+
     .footer .phone p {
         font-size: 3.8vw;
     }
-    
+
     .footer .f_oter_info_2 {
         display: flex;
         flex-direction: row;
         gap: 10vw;
         margin-bottom: 11vw;
     }
-    
+
     .footer .time h4 {
         margin-bottom: 1vw;
         font-size: 4.4vw;
     }
-    
+
     .footer .time p {
         font-size: 3.8vw;
     }
-    
+
     .footer .buttons {
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 6.6vw;
     }
-    
+
     .footer .buttons button {
         width: 100%;
         padding: 3vw 1vw;
@@ -1997,21 +2029,30 @@ a {
         border-radius: 2vw;
         font-size: 3.8vw;
     }
-    
+
     .footer .project img {
         width: 5.5vw;
     }
-    
+
     .footer .call img {
         width: 5vw;
     }
-    
-    
+
+
     .footer .f_discription {
         margin-top: 2vw;
         font-size: 2.5vw;
         font-weight: 500;
         line-height: 150%;
+    }
+
+    .footer hr {
+        display: block;
+        width: 100%;
+        height: 0.1vw;
+        background-color: rgba(255, 255, 255, 0.20);
+        border: none;
+        margin-bottom: 2vw;
     }
 
 
@@ -2020,19 +2061,19 @@ a {
     /* catalog.html  */
 
     .main {
-        padding: 11vw 5.5vw 0;
+        padding: 8vw 5.5vw 0;
         background-color: #F4F3F1;
     }
-    
+
     .main .ways {
         display: flex;
         flex-direction: row;
         gap: 4vw;
-    
+
         font-size: 3.8vw;
         font-weight: 500;
     }
-    
+
     .main .catalog_title {
         font-size: 6.6vw;
         margin: 5.5vw 0 8.8vw 0;
@@ -2042,42 +2083,42 @@ a {
         flex-wrap: wrap;
         gap: 4.4vw;
     }
-    
+
     .main .catalog_buttons button {
         width: 25vw;
         padding: 2.7vw 5.5vw;
         border-radius: 2vw;
         font-size: 3.8vw;
     }
-    
+
     .main .catalog_buttons button:hover {
         background-color: #B17955;
         color: white;
     }
-    
+
     .catalog_filter {
         display: flex;
         flex-direction: column;
         gap: 6.6vw;
     }
-    
+
     .catalog_filter select {
         width: 50vw;
         font-size: 3.8vw;
         margin-left: 0;
     }
-    
+
     .catalog_filter select option {
         font-size: 3.8vw;
     }
-    
-    
+
+
     .catalog .look_more {
         margin-bottom: 11vw;
         padding: 3vw 7vw;
         border-radius: 2vw;
         font-size: 4.4vw;
-    
+
         cursor: pointer;
         transition: all 0s ease-in-out;
     }
@@ -2085,24 +2126,24 @@ a {
     .catalog .numbers_pages {
         gap: 6vw;
     }
-    
+
     .catalog .numbers_pages h4 {
         width: 13vw;
         height: 13vw;
-    
+
         font-size: 5vw;
     }
-    
+
     .catalog .numbers_pages .opened_page {
         border-radius: 2vw;
     }
-    
+
     .catalog .numbers_pages .pages_arrow {
         width: 13vw;
         height: 13vw;
         font-size: 6vw;
     }
-    
+
 
 
 
@@ -2111,37 +2152,38 @@ a {
     .main_matteo {
         padding-top: 0;
     }
-    
+
     .main_matteo .matteo_ways {
         display: none
     }
-    
-    
+
+
     .product_view {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    
+
         margin-top: 2.7vw;
     }
-    
+
     .product_view .product_img {
         position: relative;
     }
-    
+
     .product_view .product_img .main_img {
         width: 100%;
-    
+
     }
-    
+
     .product_view .product_img .main_img_rect {
         display: none;
     }
+
     .product_view .product_img .other_img {
         display: none;
     }
 
-    
+
     .product_view .product_img .arrow_1 {
         width: 12vw;
         height: 12vw;
@@ -2153,56 +2195,57 @@ a {
         align-items: center;
         display: flex;
     }
-    
+
     .product_view .product_img .arrow_2 {
         width: 12vw;
         height: 12vw;
         font-size: 7vw;
         border-radius: 0 2vw 2vw 0;
         padding: 0.5vw;
+        padding-bottom: 0.1vw;
         top: 25vw;
         text-align: center;
         align-items: center;
         display: flex;
     }
-    
+
     .product_view .product_info {
         width: 100%;
         gap: 6.6vw;
-    
-        padding: 8.3vw 5.5vw; 
+
+        padding: 8.3vw 5.5vw;
     }
-    
+
     .product_view .product_info h2 {
         font-size: 6.6vw;
     }
-    
+
     .product_view .product_info .product_info_discr {
         gap: 6.6vw;
     }
-    
+
     .product_view .product_info .discr_sectins {
         gap: 3.3vw;
         font-size: 3.8vw;
     }
-    
+
     .product_view .product_info .discr_data {
         gap: 3.3vw;
         font-size: 3.8vw;
     }
-    
+
     .product_view .product_info .product_info_price {
         gap: 3.3vw;
     }
-    
+
     .product_view .product_info .product_info_price h2 {
         font-size: 6.6vw;
     }
-    
+
     .product_view .product_info .product_info_price h3 {
         font-size: 4.4vw;
     }
-    
+
     .product_view .product_info button {
         padding: 3.3vw 5.5vw;
         gap: 1vw;
@@ -2213,106 +2256,107 @@ a {
     .product_view .product_info .product_info_favourits {
         gap: 2vw;
     }
-    
+
     .product_view .product_info .product_info_favourits .fa-heart {
         font-size: 5vw;
     }
-    
+
     .product_view .product_info .product_info_favourits p {
         font-size: 4.5vw;
     }
-    
+
     .product_view .product_info .product_info_note {
         display: none;
     }
-    
-    
+
+
     .product_discription {
         width: 100%;
         gap: 4.4vw;
         margin-left: 0;
-        padding: 1vw 5.5vw 16vw;
-    
+        padding: 1vw 5.5vw 5vw;
+
         background-color: white;
     }
-    
+
     .product_discription h3 {
         font-size: 5vw;
     }
-    
+
     .product_discription p {
         font-size: 3.8vw;
     }
-    
-    
-    
+
+
+
     .product_appeal {
         width: 100%;
-    
+
         margin: 0;
-        padding: 16vw 5.5vw 16vw;
-    
+        padding: 16vw 5.5vw 20vw;
+
         background-color: white;
     }
-    
+
     .product_appeal h2 {
         font-size: 6.6vw;
         margin-bottom: 11vw;
         text-align: center;
     }
-    
+
     .product_appeal .product_appeal_main {
         display: flex;
         flex-direction: column;
         gap: 11vw;
     }
-    
+
     .product_appeal video {
         width: 100%;
     }
-    
+
     .product_appeal .product_appeal_subscribe h3 {
         font-size: 5vw;
         margin-bottom: 4.4vw;
     }
-    
+
     .product_appeal .product_appeal_subscribe p {
         font-size: 3.8vw;
     }
-    
-    
+
+
     .product_appeal .product_appeal_subscribe .sub_input .form-group label {
         font-size: 3.8vw;
         margin-bottom: 2vw;
     }
-    
-    .product_appeal .product_appeal_subscribe .sub_input .form-group input, .form-group textarea {
+
+    .product_appeal .product_appeal_subscribe .sub_input .form-group input,
+    .form-group textarea {
         margin-bottom: 1%;
         width: 100%;
         padding: 0.3vw 0;
     }
-    
+
     .product_appeal .product_appeal_subscribe .sub_input {
         display: flex;
         flex-direction: column;
         gap: 6.6vw;
-    
+
         margin: 6.6vw 0;
     }
-    
+
     .product_appeal .product_appeal_subscribe .sub_input input {
         font-size: 4.4vw;
     }
-    
+
     .product_appeal .product_appeal_subscribe .sub_input input::placeholder {
         font-size: 4.4vw;
     }
-    
+
     .product_appeal .product_appeal_subscribe .sub_input .sub_name::placeholder {
         font-size: 4.4vw;
     }
-    
-    
+
+
     .product_appeal .product_appeal_subscribe button {
         display: flex;
         width: 100%;
@@ -2323,80 +2367,82 @@ a {
 
         margin-bottom: 6.6vw;
     }
-    
+
     .product_appeal .product_appeal_subscribe .sub_note {
         font-size: 3.3vw;
     }
-    
-    
+
+
     .product_appeal .product_appeal_networks {
         display: flex;
         flex-direction: column;
-        gap: 2vw;
-    
+        gap: 5vw;
+
         margin-top: 11vw;
     }
-    
+
     .product_appeal .product_appeal_networks i {
         margin-left: 0.8vw;
     }
-    
+
     .product_appeal .product_appeal_networks .pr_telegram:hover i {
         margin-left: 1vw;
     }
-    
+
     .product_appeal .product_appeal_networks .pr_youtube:hover i {
         margin-left: 1vw;
     }
-    
+
     .product_appeal .product_appeal_networks .pr_telegram {
         display: flex;
         flex-direction: column;
         justify-content: center;
         justify-items: center;
-        
+        align-items: baseline;
+
 
         width: 100%;
         gap: 4.4vw;
         height: 63vw;
 
         padding: 6.6vw;
-    
+
         border-radius: 2vw;
     }
-    
+
     .product_appeal .product_appeal_networks .pr_telegram img {
         width: 11vw;
         height: 11vw;
     }
-    
+
     .product_appeal .product_appeal_networks .pr_youtube {
         display: flex;
         flex-direction: column;
         justify-content: center;
         justify-items: center;
+        align-items: baseline;
         gap: 4.4vw;
-    
+
         width: 100%;
         height: 50vw;
         background-color: #F4F3F1;
         padding: 3.3vw 6.6vw;
-    
+
         border-radius: 2vw;
     }
-    
+
     .product_appeal .product_appeal_networks .pr_youtube img {
         width: 11vw;
         height: 8vw;
     }
-    
-    
+
+
     .product_appeal .product_appeal_networks .product_appeal_networks_text h4 {
         font-size: 4.4vw;
         font-weight: 600;
         margin-bottom: 4vw;
     }
-    
+
     .product_appeal .product_appeal_networks .product_appeal_networks_text p {
         font-size: 3.8vw;
     }
